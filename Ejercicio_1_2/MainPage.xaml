@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_1_2.MainPage">
+    <StackLayout 
+      
+        Background="#E8F8F5">
+        
+        <Frame BackgroundColor="#AED6F1" 
+               Padding="20" 
+               CornerRadius="0">
+            <Label Text="Ejercicio 2 " 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="18"
+                   FontFamily=""/>
+        </Frame>
+
+        <Label Text="Nombre" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20" 
+               Padding="10,34,30,0"
+               />
+
+        <Entry x:Name="TNombre"
+               Placeholder=""
+               Keyboard="Text"
+               Margin="0,0,30,0"
+               />
+
+        <Label Text="Apellidos" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20" 
+               Padding="10,14,30,0"/>
+
+        <Entry x:Name="TApellidos"
+               Placeholder=""
+               Keyboard="Text"
+               Margin="0,0,30,0"
+               />
+
+        <Label Text="Edad" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20" 
+               Padding="10,14,30,0"/>
+
+        <Entry x:Name="TEdad"
+               Placeholder=" "
+               Keyboard="Numeric"
+               Margin="0,0,30,0"
+               />
+        <Label Text="Correo Electrónico" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20" 
+               Padding="10,14,30,0"/>
+
+        <Entry x:Name="TCorreo"
+               Placeholder=""
+               Keyboard="Email"
+               Margin="0,0,30,0"
+               />
+
+        <Button Text="Enviar" 
+              x:Name="b_enviar"
+                Clicked="b_enviar_Clicked"
+                TextTransform="None"
+                BackgroundColor="#48C9B0"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                Padding="10,10,10,10"  
+                Margin="30,10,30,10"/>
+
+
+    </StackLayout>
+
+</ContentPage>
